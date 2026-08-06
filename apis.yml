@@ -1,17 +1,34 @@
 aid: zero-motorcycles
 name: Zero Motorcycles
-description: 'Zero Motorcycles is a company surfaced via the API Evangelist harvest backlog (source: secondary-market)
-  and added to the network as a stub for full-pipeline profiling.'
+description: 'Zero Motorcycles is an American manufacturer of electric motorcycles
+  and powertrains, founded in 2006 in Santa Cruz, California. It designs and builds
+  street, dual-sport and off-road electric motorcycles across its S, DS, FX and X
+  lines — including the SR/S, SR/F, DSR/X, FXE and XE — around a proprietary Z-Force
+  electric powertrain and aircraft-grade aluminum frame. Its bikes run the Cypher
+  operating system, which pairs with the Zero Motorcycles NextGen mobile app over
+  Bluetooth and cellular telematics for ride data, remote diagnostics, over-the-air
+  updates and performance customization, and with the Cypher Store, where owners
+  purchase software upgrades that unlock additional power, top speed and features.
+  Zero sells internationally through a dealer network and serves retail, fleet and
+  authority/first-responder segments. Its connected-vehicle platform is consumer-facing
+  only: Zero publishes no public developer program, API documentation, SDKs or
+  machine-readable specification.'
 url: https://raw.githubusercontent.com/api-evangelist/zero-motorcycles/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
 specificationVersion: '0.20'
 created: '2026-08-05'
 modified: '2026-08-05'
+image: https://images.prismic.io/zero-cms-disco/ZyTe6K8jQArT0HpQ_Zero_2025_XBXE_CoastLifestyle-1465-web.jpg?auto=format,compress
 tags:
 - Company
+- Electric Vehicles
+- Motorcycles
+- Automotive
+- Manufacturing
+- Connected Vehicles
+- Telematics
+- Mobility
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -19,5 +36,45 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/zero-motorcycles-domain-security.yml
+- type: LLMsTxt
+  url: llms/zero-motorcycles-llms.txt
 - type: Website
+  url: https://zeromotorcycles.com/
+- type: Company
+  url: https://zeromotorcycles.com/company
+- type: Support
+  url: https://zeromotorcycles.com/contact
+- type: TermsOfService
+  url: https://zeromotorcycles.com/zero-terms-of-service
+- type: PrivacyPolicy
+  url: https://zeromotorcycles.com/zero-privacy-policy
+- type: SecondaryMarket
   url: https://forgeglobal.com/zero-motorcycles_stock/
+x-enrichment:
+  date: '2026-08-05'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
+x-coverage:
+  state: none
+  reason: no-developer-program
+  detail: >-
+    Zero ships a real connected-vehicle stack — the Cypher OS, the NextGen app and
+    the Cypher Store paid-upgrade backend at api-cypherstore.zeromotorcycles.com —
+    but that host answers every path, including a nonsense control path, with the
+    same 351-byte "Welcome to Zeromotor" HTML page, and a 4,100-URL sitemap contains
+    no developer, API or integration page anywhere.
+  evidence:
+  - url: https://api-cypherstore.zeromotorcycles.com/openapi.json
+    status: 200
+  - url: https://api-cypherstore.zeromotorcycles.com/zzz-control-nonsense-9f3
+    status: 200
+  - url: https://zeromotorcycles.com/developers
+    status: 404
+  - url: https://zeromotorcycles.com/.well-known/agent-card.json
+    status: 404
+  - url: https://zeromotorcycles.com/llms.txt
+    status: 404
+  checked: '2026-08-05'
