@@ -16,7 +16,7 @@ description: 'Zero Motorcycles is an American manufacturer of electric motorcycl
 url: https://raw.githubusercontent.com/api-evangelist/zero-motorcycles/refs/heads/main/apis.yml
 x-type: company
 x-source: harvest:secondary-market
-specificationVersion: '0.20'
+specificationVersion: '0.23'
 created: '2026-08-05'
 modified: '2026-08-05'
 image: https://images.prismic.io/zero-cms-disco/ZyTe6K8jQArT0HpQ_Zero_2025_XBXE_CoastLifestyle-1465-web.jpg?auto=format,compress
