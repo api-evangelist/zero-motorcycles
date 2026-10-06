@@ -41,7 +41,7 @@ accessModel:
   method: derived
 specificationVersion: '0.23'
 created: '2026-08-05'
-modified: '2026-08-05'
+modified: '2026-10-06'
 image: https://images.prismic.io/zero-cms-disco/ZyTe6K8jQArT0HpQ_Zero_2025_XBXE_CoastLifestyle-1465-web.jpg?auto=format,compress
 tags:
 - Company
@@ -59,6 +59,8 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- url: https://zeromotorcycles.com/stories
+  type: Blog
 - type: DomainSecurity
   url: security/zero-motorcycles-domain-security.yml
 - type: LLMsTxt
